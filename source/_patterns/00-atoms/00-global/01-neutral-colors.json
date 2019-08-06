@@ -1,0 +1,13 @@
+{
+  "neutral-colors" : [
+    {
+      "name": "white",
+      "hex": "#fefefe"
+    },
+    {
+      "name": "black",
+      "hex": "#0a0a0a"
+    }
+  ],
+  "empty": false
+}

@@ -1,0 +1,13 @@
+{
+  "brand-colors" : [
+    {
+      "name": "primary",
+      "hex": "#c22127"
+    },
+    {
+      "name": "secondary",
+      "hex": "#8a0000"
+    }
+  ],
+  "empty": false
+}

@@ -1,0 +1,26 @@
+.big-guy-button {
+  // this is scrapy and needs love
+  text-decoration: none;
+  box-shadow: none;
+  color: $primary-color;
+  background: none;
+
+  // order https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties
+  border-top: none;
+  border-right: 0.1em solid $primary-color;
+  border-bottom: 0.1em solid $primary-color;
+  border-left: none;
+  border-bottom-right-radius: 3px; // this should be on a global above
+
+  font-size: 2em; // this should be from a h level would make more sense // this changes based on sizes
+  font-weight: bold;
+
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.85em 1em;// $global I think I need margins and paddings in global
+
+  transition: background-color 0.25s ease-out,color 0.25s ease-out;
+
+  line-height: 1; // why is this different
+  cursor: pointer;
+}

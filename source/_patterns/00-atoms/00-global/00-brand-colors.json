@@ -1,0 +1,21 @@
+{
+  "brand-colors" : [
+    {
+      "name": "soft-yellow",
+      "hex": "#f2c94c"
+    },
+    {
+      "name": "soft-orange",
+      "hex": "#f2994a"
+    },
+    {
+      "name": "vivid-cyan",
+      "hex": "#1cb5e0"
+    },
+    {
+      "name": "very-dark-blue",
+      "hex": "#000046"
+    }
+  ],
+  "empty": false
+}

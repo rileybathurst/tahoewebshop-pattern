@@ -1,0 +1,65 @@
+.soft-yellow-background {
+  background: #f2c94c;
+}
+
+.soft-orange-background {
+  background: #f2994a;
+}
+
+.vivid-cyan-background {
+  background: #1cb5e0;
+}
+
+.very-dark-blue-background {
+  background: #000046;
+}
+
+.black-background {
+  background: #0a0a0a;
+}
+
+.white-background {
+  background: #fefefe;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.fallback-font-base {
+  font-family: sans-serif;
+}
+
+.global-margin {
+  margin: 1em;
+}
+
+.float-left {
+  float: left;
+}
+
+.global-padding {
+  padding: 1em;
+}
+
+.big-guy-button {
+  text-decoration: none;
+  box-shadow: none;
+  color: #c22127;
+  background: none;
+  border-top: none;
+  border-right: 0.1em solid #c22127;
+  border-bottom: 0.1em solid #c22127;
+  border-left: none;
+  border-bottom-right-radius: 3px;
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.85em 1em;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

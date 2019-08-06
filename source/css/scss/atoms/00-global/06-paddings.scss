@@ -1,0 +1,6 @@
+$global-padding: 1em;
+$line-height: 1.5em;
+
+.global-padding {
+  padding: $global-padding; // would be nice to be build something in with line height for the vertical
+}

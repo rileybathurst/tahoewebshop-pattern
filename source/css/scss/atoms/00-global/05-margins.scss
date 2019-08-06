@@ -1,0 +1,10 @@
+$global-margin: 1em;
+$line-height: 1.5em;
+
+.global-margin {
+  margin: $global-margin; // would be nice to be build something in with line height for the vertical
+}
+
+.float-left { // slight hack needed for PL
+  float: left;
+}
