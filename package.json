@@ -20,5 +20,8 @@
     "@pattern-lab/engine-mustache": "^2.0.1-alpha.0",
     "@pattern-lab/starterkit-mustache-base": "^3.0.3",
     "@pattern-lab/uikit-workshop": "^1.0.1"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.15"
   }
 }
