@@ -42,24 +42,24 @@ body {
   padding: 1em;
 }
 
-.big-guy-button {
-  text-decoration: none;
-  box-shadow: none;
-  color: #c22127;
-  background: none;
-  border-top: none;
-  border-right: 0.1em solid #c22127;
-  border-bottom: 0.1em solid #c22127;
-  border-left: none;
-  border-bottom-right-radius: 3px;
-  font-size: 2em;
-  font-weight: bold;
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0.85em 1em;
-  transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  line-height: 1;
-  cursor: pointer;
+.light-background {
+  background: linear-gradient(-45deg, rgba(242, 201, 76, 0.5) 0%, rgba(242, 153, 74, 0.5) 100%);
+}
+
+.lake-background {
+  background: linear-gradient(0deg, #000046 0%, #1cb5e0 100%);
+}
+
+.send-button {
+  background: linear-gradient(-45deg, #f2c94c 0%, #f2994a 100%);
+  padding: 1em;
+  border-radius: 4px;
+  color: #FAFAFA;
+  font-size: 1.25em;
+}
+
+.c-header {
+  background: linear-gradient(-45deg, rgba(242, 201, 76, 0.5) 0%, rgba(242, 153, 74, 0.5) 100%);
 }
 
 /*# sourceMappingURL=style.css.map */

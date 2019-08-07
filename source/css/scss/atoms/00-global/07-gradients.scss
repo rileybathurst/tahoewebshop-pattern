@@ -1,0 +1,11 @@
+// Gradients
+$light: linear-gradient(-45deg, rgba(242,201,76,0.5) 0%, rgba(242,153,74,0.5) 100%);
+$lake: linear-gradient(0deg, #000046 0%, #1cb5e0 100%);
+
+.light-background {
+  background: $light;
+}
+
+.lake-background {
+  background: $lake;
+}
