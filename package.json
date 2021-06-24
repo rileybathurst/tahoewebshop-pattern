@@ -17,8 +17,8 @@
   "dependencies": {
     "@pattern-lab/cli": "^5.14.3",
     "@pattern-lab/core": "^5.14.3",
-    "@pattern-lab/engine-mustache": "^5.14.3",
-    "@pattern-lab/starterkit-mustache-base": "^3.0.3",
+    "@pattern-lab/engine-handlebars": "^5.14.3",
+    "@pattern-lab/starterkit-handlebars-demo": "^5.14.1",
     "@pattern-lab/uikit-workshop": "^5.14.3"
   },
   "devDependencies": {
