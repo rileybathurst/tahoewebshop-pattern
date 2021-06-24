@@ -1,0 +1,100 @@
+Perfers Color Scheme Light
+{{!-- too big but thats later --}}
+<ul class="sg-colors" style="background: #fefefe ">
+    {{# items }}
+        <li>
+            <span class="sg-swatch" style="background: {{ value }}; clip-path: polygon(0 0, 100% 0, 0 100%);"></span>
+            <span class="sg-label">
+                {{ name }}
+                <br />Hex {{ value }}
+                <br />Contrast {{ contrast-light }}
+                <br />Normal Text AA {{ light-normal-AA }}
+                <br />Normal Text AAA {{ light-normal-AAA }}
+                <br />Large Text AA {{ light-large-AA }}
+                <br />Large Text AAA {{ light-large-AAA }}
+                <br />UI {{ light-UI }}
+            </span>
+        </li>
+    {{/ items }}
+</ul>
+<small>{{{ meta.description }}}</small>
+
+Perfers Color Scheme Dark
+<ul class="sg-colors">
+    {{# items }}
+        <li style="background-color: #0a0a0a;">
+            <span class="sg-swatch" style="background: {{ value }}; clip-path: polygon(0 0, 100% 0, 0 100%);"></span>
+            {{!-- clip-path: polygon(0 0, 100% 0, 0 100%); --}}
+            <span class="sg-label" style="color: #fefefe;">
+                {{!-- style="color: #fefefe;" --}}
+                {{ name }}
+                <br />Hex {{ value }}
+                <br />Contrast {{ contrast-dark }}
+                <br />Normal Text AA {{ dark-normal-AA }}
+                <br />Normal Text AAA {{ dark-normal-AAA }}
+                <br />Large Text AA {{ dark-large-AA }}
+                <br />Large Text AAA {{ dark-large-AAA }}
+                <br />UI {{ dark-UI }}
+            </span>
+        </li>
+    {{/ items }}
+</ul>
+<small>{{{ meta.description }}}</small>
+
+Primary background
+<ul class="sg-colors">
+    {{# items }}
+        <li style="background-color: #1e93bd;">
+            <span class="sg-swatch" style="background: {{ value }}; clip-path: polygon(0 0, 100% 0, 0 100%);"></span>
+            {{!-- clip-path: polygon(0 0, 100% 0, 0 100%); --}}
+            <span class="sg-label" style="color: #fefefe;">
+                {{!-- style="color: #fefefe;" --}}
+                {{ name }}
+                <br />Hex {{ value }}
+                <br />Contrast {{ contrast-primary }}
+                <br />Normal Text AA {{ primary-normal-AA }}
+                <br />Normal Text AAA {{ primary-normal-AAA }}
+                <br />Large Text AA {{ primary-large-AA }}
+                <br />Large Text AAA {{ primary-large-AAA }}
+                <br />UI {{ primary-UI }}
+            </span>
+        </li>
+    {{/ items }}
+</ul>
+
+Secondary background
+<ul class="sg-colors">
+    {{# items }}
+        <li style="background-color: #006087;">
+            <span class="sg-swatch" style="background: {{ value }}; clip-path: polygon(0 0, 100% 0, 0 100%);"></span>
+            {{!-- clip-path: polygon(0 0, 100% 0, 0 100%); --}}
+            <span class="sg-label" style="color: #fefefe;">
+                {{!-- style="color: #fefefe;" --}}
+                {{ name }}
+                <br />Hex {{ value }}
+                <br />Contrast {{ contrast-secondary }}
+                <br />Normal Text AA {{ secondary-normal-AA }}
+                <br />Normal Text AAA {{ secondary-normal-AAA }}
+                <br />Large Text AA {{ secondary-large-AA }}
+                <br />Large Text AAA {{ secondary-large-AAA }}
+                <br />UI {{ secondary-UI }}
+            </span>
+        </li>
+    {{/ items }}
+</ul>
+
+{{!-- 
+This would be 100x nicer if it was styled or automatic but this is base level
+
+WCAG 2.0 level AA
+requires a contrast ratio of at least
+4.5:1 for normal text
+3:1 for large text.
+
+WCAG 2.1 requires a contrast ratio of at least
+3:1 for graphics and user interface components (such as form input borders).
+
+WCAG Level AAA requires a contrast ratio of at least
+7:1 for normal text
+4.5:1 for large text. 
+--}}
