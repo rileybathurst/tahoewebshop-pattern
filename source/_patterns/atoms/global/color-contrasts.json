@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "name": "lake-surface",
+      "value": "rgb(28, 181, 224)",
+      "contrast-white": "2.3",
+      "white-normal-AA": "fail",
+      "white-normal-AAA": "fail",
+      "white-large-AA": "fail",
+      "white-large-AAA": "fail",
+      "white-UI": "fail",
+      "contrast-black": "8.24",
+      "black-normal-AA": "pass",
+      "black-normal-AAA": "pass",
+      "black-large-AA": "pass",
+      "black-large-AAA": "pass",
+      "black-UI": "pass"
+    },
+    {
+      "name": "lake-deep",
+      "value": "rgb(0, 0, 70)",
+      "contrast-white": "18.48",
+      "white-normal-AA": "pass",
+      "white-normal-AAA": "pass",
+      "white-large-AA": "pass",
+      "white-large-AAA": "pass",
+      "white-UI": "pass",
+      "contrast-black": "1.03",
+      "black-normal-AA": "fail",
+      "black-normal-AAA": "fail",
+      "black-large-AA": "fail",
+      "black-large-AAA": "fail",
+      "black-UI": "fail"
+    }
+  ],
+  "meta": {
+    "description": ""
+  }
+}

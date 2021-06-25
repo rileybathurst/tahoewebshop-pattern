@@ -1,25 +1,25 @@
-Perfers Color Scheme Light
+Perfers Color Scheme white
 {{!-- too big but thats later --}}
-<ul class="sg-colors" style="background: #fefefe ">
+<ul class="sg-colors" style="background: #fafafa ">
     {{# items }}
         <li>
             <span class="sg-swatch" style="background: {{ value }}; clip-path: polygon(0 0, 100% 0, 0 100%);"></span>
             <span class="sg-label">
                 {{ name }}
                 <br />Hex {{ value }}
-                <br />Contrast {{ contrast-light }}
-                <br />Normal Text AA {{ light-normal-AA }}
-                <br />Normal Text AAA {{ light-normal-AAA }}
-                <br />Large Text AA {{ light-large-AA }}
-                <br />Large Text AAA {{ light-large-AAA }}
-                <br />UI {{ light-UI }}
+                <br />Contrast {{ contrast-white }}
+                <br />Normal Text AA {{ white-normal-AA }}
+                <br />Normal Text AAA {{ white-normal-AAA }}
+                <br />Large Text AA {{ white-large-AA }}
+                <br />Large Text AAA {{ white-large-AAA }}
+                <br />UI {{ white-UI }}
             </span>
         </li>
     {{/ items }}
 </ul>
 <small>{{{ meta.description }}}</small>
 
-Perfers Color Scheme Dark
+Perfers Color Scheme black
 <ul class="sg-colors">
     {{# items }}
         <li style="background-color: #0a0a0a;">
@@ -29,59 +29,17 @@ Perfers Color Scheme Dark
                 {{!-- style="color: #fefefe;" --}}
                 {{ name }}
                 <br />Hex {{ value }}
-                <br />Contrast {{ contrast-dark }}
-                <br />Normal Text AA {{ dark-normal-AA }}
-                <br />Normal Text AAA {{ dark-normal-AAA }}
-                <br />Large Text AA {{ dark-large-AA }}
-                <br />Large Text AAA {{ dark-large-AAA }}
-                <br />UI {{ dark-UI }}
+                <br />Contrast {{ contrast-black }}
+                <br />Normal Text AA {{ black-normal-AA }}
+                <br />Normal Text AAA {{ black-normal-AAA }}
+                <br />Large Text AA {{ black-large-AA }}
+                <br />Large Text AAA {{ black-large-AAA }}
+                <br />UI {{ black-UI }}
             </span>
         </li>
     {{/ items }}
 </ul>
 <small>{{{ meta.description }}}</small>
-
-Primary background
-<ul class="sg-colors">
-    {{# items }}
-        <li style="background-color: #1e93bd;">
-            <span class="sg-swatch" style="background: {{ value }}; clip-path: polygon(0 0, 100% 0, 0 100%);"></span>
-            {{!-- clip-path: polygon(0 0, 100% 0, 0 100%); --}}
-            <span class="sg-label" style="color: #fefefe;">
-                {{!-- style="color: #fefefe;" --}}
-                {{ name }}
-                <br />Hex {{ value }}
-                <br />Contrast {{ contrast-primary }}
-                <br />Normal Text AA {{ primary-normal-AA }}
-                <br />Normal Text AAA {{ primary-normal-AAA }}
-                <br />Large Text AA {{ primary-large-AA }}
-                <br />Large Text AAA {{ primary-large-AAA }}
-                <br />UI {{ primary-UI }}
-            </span>
-        </li>
-    {{/ items }}
-</ul>
-
-Secondary background
-<ul class="sg-colors">
-    {{# items }}
-        <li style="background-color: #006087;">
-            <span class="sg-swatch" style="background: {{ value }}; clip-path: polygon(0 0, 100% 0, 0 100%);"></span>
-            {{!-- clip-path: polygon(0 0, 100% 0, 0 100%); --}}
-            <span class="sg-label" style="color: #fefefe;">
-                {{!-- style="color: #fefefe;" --}}
-                {{ name }}
-                <br />Hex {{ value }}
-                <br />Contrast {{ contrast-secondary }}
-                <br />Normal Text AA {{ secondary-normal-AA }}
-                <br />Normal Text AAA {{ secondary-normal-AAA }}
-                <br />Large Text AA {{ secondary-large-AA }}
-                <br />Large Text AAA {{ secondary-large-AAA }}
-                <br />UI {{ secondary-UI }}
-            </span>
-        </li>
-    {{/ items }}
-</ul>
 
 {{!-- 
 This would be 100x nicer if it was styled or automatic but this is base level
