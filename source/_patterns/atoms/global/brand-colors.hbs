@@ -3,8 +3,9 @@
     <li>
     <span class="sg-swatch {{ name }}-background"></span>
     <span class="sg-label">
-      ${{ name }}<br />
-      {{ hex }}
+      var(--{{ name }})<br />
+      #{{ hex }}
+      hsl {{ hsl }}
     </span>
   </li>
   {{/brand-colors}}

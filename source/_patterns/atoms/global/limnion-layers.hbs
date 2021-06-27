@@ -1,0 +1,17 @@
+<ul class="sg-colors">
+  {{#brand-colors}}
+    <li>
+    <span class="sg-swatch" style="background: var(--{{ name }});"></span>
+    <span class="sg-label">
+      var(--{{ name }})<br />
+      #{{ hex }}
+      hsl {{ hsl }}
+    </span>
+  </li>
+  {{/brand-colors}}
+</ul>
+
+{{!-- 
+this is possible to convert but its a significant amount of JS
+https://css-tricks.com/converting-color-spaces-in-javascript/#hsl-to-hex
+--}}

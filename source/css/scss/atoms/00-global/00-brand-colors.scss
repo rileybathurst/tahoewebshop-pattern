@@ -4,6 +4,10 @@ $soft-orange: #f2994a;
 $vivid-cyan: #1cb5e0;
 $very-dark-blue: #000046;
 
+// HSL
+// $vivid-cyan: hsl(193, 78%, 49%);
+// $very-dark-blue: hsl(240, 100%, 14%);
+
 :root {
   --black: #0a0a0a;
   --white: #fafafa;
@@ -23,6 +27,25 @@ $very-dark-blue: #000046;
     rgba(0, 0, 70, 1) 0%,
     rgba(28, 181, 224, 1) 100%
   );
+
+  --shallows: linear-gradient(
+    0deg,
+    hsl(193, 58%, 59%) 0%,
+    hsl(193, 58%, 79%) 100%
+  );
+  
+  --deep: linear-gradient(
+    0deg,
+    hsl(193, 58%, 29%) 0%,
+    hsl(193, 58%, 79%) 100%
+  );
+
+  --sunrise: linear-gradient(
+    0deg,
+    hsl(29, 100%, 69%) 0%,
+    hsl(47, 100%, 78%) 100%
+  );
+
 
   --drop: hsla(0, 0%, 0%, 0.25);
   
