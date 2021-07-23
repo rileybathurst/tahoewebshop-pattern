@@ -1,11 +1,9 @@
-// Neutral Colors
-$black: #0a0a0a;
-$white: #fefefe;
+/*------------------------------------*/
+//  #Neutrals
+/*------------------------------------*/
 
-.black-background {
-  background: $black;
-}
-
-.white-background {
-  background: $white;
+:root {
+  --black: #0a0a0a;
+  --white: #fafafa;
+  --drop: hsla(0, 0%, 0%, 0.25);
 }

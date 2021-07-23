@@ -1,69 +1,10 @@
-// Brand Colors
-$soft-yellow: #f2c94c;
-$soft-orange: #f2994a;
-$vivid-cyan: #1cb5e0;
-$very-dark-blue: #000046;
-
-// HSL
-// $vivid-cyan: hsl(193, 78%, 49%);
-// $very-dark-blue: hsl(240, 100%, 14%);
+/*------------------------------------*/
+//  #Brand Color
+/*------------------------------------*/
 
 :root {
-  --black: #0a0a0a;
-  --white: #fafafa;
-  --primary: rgb(242, 201, 76);
-  --primary__dark: #bb6a1b;
-  --light-fallback: rgb(242, 201, 76);
-  --light: linear-gradient(
-    -45deg,
-    rgba(242, 201, 76, 0.5) 0%,
-    rgba(242, 153, 74, 0.5) 100%
-  );
-
-  --lake-deep: rgb(0, 0, 70);
-  --lake-surface: rgb(28, 181, 224);
-  --lake: linear-gradient(
-    0deg,
-    rgba(0, 0, 70, 1) 0%,
-    rgba(28, 181, 224, 1) 100%
-  );
-
-  --shallows: linear-gradient(
-    0deg,
-    hsl(193, 58%, 59%) 0%,
-    hsl(193, 58%, 79%) 100%
-  );
-  
-  --deep: linear-gradient(
-    0deg,
-    hsl(193, 58%, 29%) 0%,
-    hsl(193, 58%, 79%) 100%
-  );
-
-  --sunrise: linear-gradient(
-    0deg,
-    hsl(29, 100%, 69%) 0%,
-    hsl(47, 100%, 78%) 100%
-  );
-
-
-  --drop: hsla(0, 0%, 0%, 0.25);
-  
-  --three: 1fr minmax(min-content, 44em) 1fr;
+  --epilmnion: hsl(188, 100%, 79%); // #95f1ff
+  --metalmnion:hsl(188, 100%, 45%); // #00c9e7
+  --hypolmnion:hsl(188, 100%, 18%); // #004f5b
 }
 
-.soft-yellow-background {
-  background: $soft-yellow;
-}
-
-.soft-orange-background {
-  background: $soft-orange;
-}
-
-.vivid-cyan-background {
-  background: $vivid-cyan;
-}
-
-.very-dark-blue-background {
-  background: $very-dark-blue;
-}

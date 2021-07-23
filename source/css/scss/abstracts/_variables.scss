@@ -1,22 +1,5 @@
-// Brand Colors
-$primary-color: #c22127;
-$secondary-color: #8a0000;
+/* :root {
 
-// Neutral Colors
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
+} */
 
-:root {
-  --vivid-cyan: hsl(193, 78%, 49%);
-  --vivid-cyan-hs: 193, 78%;
-  --vivid-cyan-l: 49%;
-
-  --very-dark-blue: hsl(240, 100%, 14%);
-  --very-dark-blue-hs: 240, 100%;
-  --very-dark-blue-l: 14%;
-
-
-}
+$break-small: 30rem;

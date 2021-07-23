@@ -1,11 +1,10 @@
 <ul class="sg-colors">
   {{#brand-colors}}
     <li>
-    <span class="sg-swatch {{ name }}-background"></span>
+    <span class="sg-swatch" style="background: {{ hsl }};"></span>
     <span class="sg-label">
       var(--{{ name }})<br />
-      #{{ hex }}
-      hsl {{ hsl }}
+      {{ hsl }}
     </span>
   </li>
   {{/brand-colors}}

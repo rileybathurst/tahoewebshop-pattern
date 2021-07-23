@@ -1,32 +1,16 @@
 {
   "brand-colors" : [
     {
-      "name": "soft-yellow",
-      "hex": "#f2c94c"
+      "name": "epilmnion",
+      "hsl": "hsl(188, 100%, 79%)"
     },
     {
-      "name": "soft-orange",
-      "hex": "#f2994a"
+      "name": "metalmnion",
+      "hsl": "hsl(188, 100%, 45%)"
     },
     {
-      "name": "vivid-cyan",
-      "hex": "#1cb5e0"
-    },
-    {
-      "name": "very-dark-blue",
-      "hex": "#000046"
-    },
-    {
-      "name": "epi",
-      "hsl": "188, 100%, 79%"
-    },
-    {
-      "name": "meta",
-      "hsl": "188, 100%, 45%"
-    },
-    {
-      "name": "hypo",
-      "hsl": "188, 100%, 18%"
+      "name": "hypolmnion",
+      "hsl": "hsl(188, 100%, 18%)"
     }
   ],
   "empty": false

@@ -1,0 +1,55 @@
+/*------------------------------------*/
+//  #links
+/*------------------------------------*/
+
+a {
+  padding: 0.25rem;
+  color: var(--black);
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--white);
+  }
+}
+
+.hover, // this is only pattern lab
+a:where(:hover, :focus) {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.2rem;
+}
+
+.svg-a {
+  display: block;
+  max-width: 8.5rem;
+
+  svg {
+    display: block;
+    padding: 0.25rem;
+  }
+}
+
+.svg-hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.app {
+  padding: 0.5rem;
+}
+
+:is(nav, .pedestal) a {
+  line-height: 1.5rem;
+  padding: 0.5rem;
+  // border-radius: 1.5rem; // smooth round?
+}
+
+:is(nav, .pedestal, #top) a:hover {
+  background: var(--hypolmnion);
+  color: var(--metalmnion);
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--epilmnion);
+  }
+
+  svg {
+    fill: var(--metalmnion)
+  }
+}

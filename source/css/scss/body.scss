@@ -1,104 +1,26 @@
-// body,
-.pl-js-pattern-example {
-  // this needs some love but its a functional starting point
-  cursor: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 512 512'%3e%3cg transform='rotate(45 256 256)'%3e%3crect id='r' x='16' y='216' width='480' height='80' rx='14'/%3e%3cuse href='%23r' transform='rotate(90 256 256)'/%3e%3c/g%3e%3c/svg%3e") 16 16, auto;
+/*------------------------------------*/
+//  #body
+/*------------------------------------*/
 
-/*   background: var(--lake-surface);
-  background: var(--shallows);
+body {
+
+  /*------------------------------------*/
+  //  #background color
+  /*------------------------------------*/
   
-  color: var(--white); */
-
-/*   a {
-    // color: var(--white);
-  } */
-}
-
-.lake {
-  background: var(--lake-surface);
-  background: var(--shallows);
-
-  @media (min-height: 30rem) { // guess and check
-    height: 90vh;
-  }
-}
-
-.three__row {
-  display: grid;
-  grid-template-columns: 1fr minmax(min-content, 44em) 1fr;
-  width: 100%;
-  gap: 1rem;
-}
-
-.three {
-  @extend .lake;
-  padding: 2rem;
-  width: calc(100% - 4rem);
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: space-between;
-  align-items: stretch;
-
-  > * {
-    @extend .three__row;
-  }
-}
-
-// Im gonna do this by row so it cant be grid area by grid area
-.three__row--vert {
-  writing-mode: vertical-lr;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-
-p {
-  margin-block-start: 0; // browser reset
-}
-
-p:hover {
-  cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 512 512'%3e%3cg transform='rotate(45 256 256)'%3e%3crect id='r' x='16' y='216' width='480' height='80' rx='14' fill='whitesmoke' /%3e%3cuse href='%23r' transform='rotate(90 256 256)'/%3e%3c/g%3e%</svg>") 16 16, auto;
+  background: var(--metalmnion);
 
   @media (prefers-color-scheme: dark) {
-    cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 512 512'%3e%3cg transform='rotate(45 256 256)'%3e%3crect id='r' x='16' y='216' width='480' height='80' rx='14' fill='black' /%3e%3cuse href='%23r' transform='rotate(90 256 256)'/%3e%3c/g%3e%</svg>") 16 16, auto;
+    background: var(--hypolmnion);
   }
-}
 
-a {
-  color: var(--black);
-}
+  /*------------------------------------*/
+  //  #text
+  /*------------------------------------*/
+  
+  color: var(--hypolmnion);
 
-a:hover {
-  text-decoration: line-through;
-}
-
-:is(nav, .pedestal) > div {
-  background: linear-gradient(
-    0deg,
-    hsl(193, 100%, 79%) 0%,
-    hsl(193, 100%, 88%) 100%
-  );
-  clip-path: polygon(0 0, 100% 1rem, 100% 100%, 0 calc(100% - 1rem));
-  // clip-path: path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z');
-}
-
-:is(nav, .pedestal) a {
-  font-weight: bold; // variable this
-  display: block;
-  line-height: 1.5rem;
-  padding: 1rem 0.5rem;
-  // border-radius: 1.5rem; // smooth round?
-  background: linear-gradient(
-    0deg,
-    hsl(193, 100%, 89%) 0%,
-    hsl(193, 100%, 98%) 100%
-  );
-  margin: 4px;
-  color: var(--black);
-  clip-path: polygon(0 0, 100% 0.9rem, 100% 100%, 0 calc(100% - 0.9rem));
-  // clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-}
-
-:is(nav, .pedestal) a:hover {
+  @media (prefers-color-scheme: dark) {
+    color: var(--epilmnion);
+  }
 }

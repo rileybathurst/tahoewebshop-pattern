@@ -1,47 +1,23 @@
-Perfers Color Scheme white
-{{!-- too big but thats later --}}
-<ul class="sg-colors" style="background: #fafafa ">
-    {{# items }}
-        <li>
-            <span class="sg-swatch" style="background: {{ value }}; clip-path: polygon(0 0, 100% 0, 0 100%);"></span>
-            <span class="sg-label">
-                {{ name }}
-                <br />Hex {{ value }}
-                <br />Contrast {{ contrast-white }}
-                <br />Normal Text AA {{ white-normal-AA }}
-                <br />Normal Text AAA {{ white-normal-AAA }}
-                <br />Large Text AA {{ white-large-AA }}
-                <br />Large Text AAA {{ white-large-AAA }}
-                <br />UI {{ white-UI }}
-            </span>
-        </li>
-    {{/ items }}
+<ul>
+  {{#contrasts}}
+    <li>
+      {{name}}
+      <br />White
+      {{contrast-white}}
+      <br />Black
+      {{contrast-black}}
+      <br />epilmnion
+      {{contrast-epilmnion}}
+      <br />metalmnion
+      {{contrast-metalmnion}}
+      <br />hypolmnion
+      {{contrast-hypolmnion}}
+    </li>
+  {{/contrasts}}
 </ul>
-<small>{{{ meta.description }}}</small>
+<small>{{{meta.description}}}</small>
 
-Perfers Color Scheme black
-<ul class="sg-colors">
-    {{# items }}
-        <li style="background-color: #0a0a0a;">
-            <span class="sg-swatch" style="background: {{ value }}; clip-path: polygon(0 0, 100% 0, 0 100%);"></span>
-            {{!-- clip-path: polygon(0 0, 100% 0, 0 100%); --}}
-            <span class="sg-label" style="color: #fefefe;">
-                {{!-- style="color: #fefefe;" --}}
-                {{ name }}
-                <br />Hex {{ value }}
-                <br />Contrast {{ contrast-black }}
-                <br />Normal Text AA {{ black-normal-AA }}
-                <br />Normal Text AAA {{ black-normal-AAA }}
-                <br />Large Text AA {{ black-large-AA }}
-                <br />Large Text AAA {{ black-large-AAA }}
-                <br />UI {{ black-UI }}
-            </span>
-        </li>
-    {{/ items }}
-</ul>
-<small>{{{ meta.description }}}</small>
-
-{{!-- 
+{{! 
 This would be 100x nicer if it was styled or automatic but this is base level
 
 WCAG 2.0 level AA
@@ -55,4 +31,4 @@ WCAG 2.1 requires a contrast ratio of at least
 WCAG Level AAA requires a contrast ratio of at least
 7:1 for normal text
 4.5:1 for large text. 
---}}
+}}
