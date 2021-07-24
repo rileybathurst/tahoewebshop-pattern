@@ -4,7 +4,58 @@
 
 svg {
   fill: currentColor;
-  max-width: 8rem;
+  max-width: 80rem;
   width: 100%;
   margin-inline: auto;
+}
+
+@keyframes pop {
+  0% {
+    stroke-width: 0;
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-width: 10;
+    stroke-opacity: 0;
+  }
+}
+
+.pop {
+  animation: pop 5s infinite;
+  stroke: var(--white);
+}
+
+@keyframes pop--tahoe {
+  0% {
+    stroke-width: 0;
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-width: 100;
+    stroke-opacity: 0;
+  }
+}
+
+.pop--tahoe {
+  animation: pop--tahoe 5s infinite;
+  stroke: var(--white);
+}
+
+// hopefully this works across the board but itll need checking that 2 fits
+
+@keyframes pop--google {
+  0% {
+    stroke-width: 0;
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-width: 2;
+    stroke-opacity: 0;
+  }
+}
+
+.pop--google {
+  animation: pop--google 5s infinite;
+  stroke: var(--white);
+  // stroke-linecap: round; // no effect
 }

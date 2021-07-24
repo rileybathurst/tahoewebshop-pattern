@@ -2,9 +2,10 @@
   color: var(--white) !important;
 }
 
-/* :root {
+:root {
+  --link--radius: 0.2rem;
+}
 
-} */
 /*------------------------------------*/
 /*------------------------------------*/
 body {
@@ -13,7 +14,8 @@ body {
   background: var(--metalmnion);
   /*------------------------------------*/
   /*------------------------------------*/
-  color: var(--hypolmnion);
+  color: var(--black);
+  font-family: "Josefin Sans", sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   body {
@@ -22,7 +24,13 @@ body {
 }
 @media (prefers-color-scheme: dark) {
   body {
-    color: var(--epilmnion);
+    color: var(--white);
+  }
+}
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: "Josefin SansVariable", sans-serif;
+    font-variation-settings: "wght" 400;
   }
 }
 
@@ -40,14 +48,6 @@ body {
   --black: #0a0a0a;
   --white: #fafafa;
   --drop: hsla(0, 0%, 0%, 0.25);
-}
-
-body {
-  font-family: sans-serif;
-}
-
-.fallback-font-base {
-  font-family: sans-serif;
 }
 
 .global-margin {
@@ -80,19 +80,22 @@ body {
 /*------------------------------------*/
 /*------------------------------------*/
 a {
+  text-decoration: underline;
+  line-height: 1.5rem;
   padding: 0.25rem;
-  color: var(--black);
+  padding-block-start: 0.5rem;
+  color: var(--hypolmnion);
 }
 @media (prefers-color-scheme: dark) {
   a {
-    color: var(--white);
+    color: var(--epilmnion);
   }
 }
 
 .hover,
 a:where(:hover, :focus) {
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 0.2rem;
+  border-radius: var(--link--radius);
 }
 
 .svg-a {
@@ -106,46 +109,88 @@ a:where(:hover, :focus) {
 
 .svg-hover {
   background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--link--radius);
 }
 
-.app {
-  padding: 0.5rem;
+nav a {
+  line-height: 2.5rem;
+  border-block-start: 1px solid var(--hypolmnion);
+  border-block-end: 1px solid var(--hypolmnion);
+  border-radius: var(--link--radius);
 }
 
-:is(nav, .pedestal) a {
-  line-height: 1.5rem;
-  padding: 0.5rem;
-}
-
-:is(nav, .pedestal, #top) a:hover {
+.nav-hover a,
+nav a:where(:hover, :focus) {
   background: var(--hypolmnion);
-  color: var(--metalmnion);
+  color: var(--epilmnion);
 }
-@media (prefers-color-scheme: dark) {
-  :is(nav, .pedestal, #top) a:hover {
-    color: var(--epilmnion);
-  }
-}
-:is(nav, .pedestal, #top) a:hover svg {
-  fill: var(--metalmnion);
+
+.card-hover,
+.card a:where(:hover, :focus) {
+  font-variation-settings: "wght" 700;
 }
 
 /*------------------------------------*/
 /*------------------------------------*/
 svg {
   fill: currentColor;
-  max-width: 8rem;
+  max-width: 80rem;
   width: 100%;
   margin-inline: auto;
 }
 
+@keyframes pop {
+  0% {
+    stroke-width: 0;
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-width: 10;
+    stroke-opacity: 0;
+  }
+}
+.pop {
+  animation: pop 5s infinite;
+  stroke: var(--white);
+}
+
+@keyframes pop--tahoe {
+  0% {
+    stroke-width: 0;
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-width: 100;
+    stroke-opacity: 0;
+  }
+}
+.pop--tahoe {
+  animation: pop--tahoe 5s infinite;
+  stroke: var(--white);
+}
+
+@keyframes pop--google {
+  0% {
+    stroke-width: 0;
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-width: 2;
+    stroke-opacity: 0;
+  }
+}
+.pop--google {
+  animation: pop--google 5s infinite;
+  stroke: var(--white);
+}
+
 button, .button {
-  background: var(--sunrise);
-  padding: 1em;
   border: none;
-  border-radius: 4px;
-  font-size: 1.25em;
-  color: var(--lake-deep);
+  background: var(--hypolmnion);
+  color: var(--white);
+  padding: 1em;
+  border-radius: var(--link--radius);
+  font-size: clamp(1rem, 1.5vw, 1.25em);
   margin-block-end: 0.5rem;
 }
 @media (prefers-color-scheme: dark) {
@@ -155,7 +200,6 @@ button, .button {
 }
 
 button:is(:hover, :focus), .button:is(:hover, :focus) {
-  background: linear-gradient(-45deg, #d6ad30 0%, #cd7425 100%);
   filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.2));
 }
 

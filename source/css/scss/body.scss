@@ -18,9 +18,16 @@ body {
   //  #text
   /*------------------------------------*/
   
-  color: var(--hypolmnion);
+  color: var(--black);
 
   @media (prefers-color-scheme: dark) {
-    color: var(--epilmnion);
+    color: var(--white);
+  }
+
+  font-family: "Josefin Sans", sans-serif;
+
+  @supports (font-variation-settings: normal) {
+    font-family: 'Josefin SansVariable', sans-serif;
+    font-variation-settings: "wght" 400;
   }
 }
